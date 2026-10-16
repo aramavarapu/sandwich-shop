@@ -33,6 +33,8 @@ public class SandwichShop {
         double discountedPrice = price * discount;
         double finalCost = price - discountedPrice;
 
+        System.out.printf("Your sandwich costs: $%.2f%n", finalCost);
+
         }
     }
 
