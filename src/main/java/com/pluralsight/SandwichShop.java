@@ -12,5 +12,27 @@ public class SandwichShop {
 
         System.out.print("Enter your age: ");
         int age = scanner.nextInt();
+
+        double price;
+        if (sizeOfSandwich == 1) {
+            price = 5.45;
+        } else if (sizeOfSandwich == 2) {
+            price = 8.95;
+        } else {
+            System.out.println("Number is not 1 or 2 please pick again.");
+            return;
+        }
+        double discount;
+        if (age <= 17) {
+            discount = 0.10;
+        } else if (age >= 65) {
+            discount = 0.20;
+        } else {
+            discount = 0.0;
+        }
+        double discountedPrice = price * discount;
+        double finalCost = price - discountedPrice;
+
+        }
     }
-}
+
